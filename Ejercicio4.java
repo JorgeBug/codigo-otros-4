@@ -19,7 +19,7 @@ public class Codigo4 {
 		// sobre todo por que no se está utilizando.
 		String j2 = s.nextLine();
 		
-		if (j1.equals(j2)) { //Se usa equals para comparar el contenido del objeto String
+		if (j1.equals(j2)) { //Se usa equals para comparar el contenido del String
 			System.out.println("Empate");
 		} else {
 			
@@ -27,23 +27,24 @@ public class Codigo4 {
 			
 			switch(j1) {
 			
-			case "piedra":
-				if (j2.equals("tijeras")) {
+			case "piedra": 
+				if (j2.equals("tijeras")) { //Se usa equals para comparar el contenido del String
 					g = 1;
 				}
 				break; //Les faltaba agregar el break;
 				
 			case "papel":
-				if (j2.equals("piedra")){
+				if (j2.equals("piedra")){//Se usa equals para comparar el contenido del String
 					g = 1;
 				}//Le faltaba cerrar la llave
 				break;//Les faltaba agregar el break;
 				
 			case "tijera":
-				if (j2.equals("papel")) {
+				if (j2.equals("papel")) {//Se usa equals para comparar el contenido del String
 					g = 1;
 				}
 				break;//Les faltaba agregar el break;
+				
 			default://Le faltaba un mensaje en caso de que uno de los dos jugadores no introdujecen los valores correspondientes
 				System.out.println("Uno de los jugadores no introdujo las opciones correspondientes");
 			}
